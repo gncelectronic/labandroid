@@ -1,0 +1,4 @@
+#Thu Apr 30 20:29:01 ART 2020
+base.0=D\:\\UTN\\CursoAndroid\\Laboratorios\\Clase01\\LogCat\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
