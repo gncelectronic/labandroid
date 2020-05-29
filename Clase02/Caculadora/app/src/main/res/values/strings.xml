@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Caculadora</string>
+    <string name="txtValor1">Numero 1</string>
+    <string name="txtValor2">Numero 2</string>
+    <string name="btnStrSuma">+</string>
+    <string name="btnStrResta">-</string>
+    <string name="btnStrMultiplicacion">*</string>
+    <string name="btnStrDivision">/</string>
+</resources>
