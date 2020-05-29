@@ -1,0 +1,43 @@
+1) Agregar un ListView al  archivo activity_main.xml el cual tendrá como valor de id: listView y ocupará toda la pantalla.
+2) Crear un archivo Layout de nombre list_view_persona.xml para nuestro adaptador, el cual será de tipo LineLayout y con horientación
+horizontal.
+3) Agregar dos textView al layout (list_view_persona) creado en el paso anterior el cual almacenará el nombre completo  y la edad, el
+textView de nombreCompleto ocupará el 80% del ancho  y el otro textView el 20% restante.
+4)Creamos un paquete llamado models.
+5) Creamos un Data class Persona con el siguiente constructor Persona(val nombre: String, val apellido: String, val edad: Int) en el paquete models
+6) Creamos un adaptador, para ello creamos un paquete adaptadores y creamos una clase Kotlin llamada PersonaAdaptador donde la clase tendra un
+constructor que reciba los siguientes elementos:
+context: Context,
+layout: Int
+listPersona: List<Persona>
+
+Este adaptador hereda de la clase BaseAdaptador
+
+7) Implementar el patron de diseño viewHolder en la misma clase PersonaAdaptador como private class PersonaViewHolder(view: View) y
+enlazamos los dos textView.
+
+8) Creamos una variable privada llamada miInflator de tipo LayoutInflater el cual será inicializado como LayoutInflator.from(contex)
+
+9) Implementamos los metodos de BaseAdapter
+    getItem  devuelve un elemento de la lista segun el indice pasado por parámetro  listaPersonas[position]
+    getItemId return postion.toLong
+    getCount return listaPersonas.size()
+    getView será implementado de la siguiente forma:
+        - Crea una variable view de tipo View
+        - Crear una variable vh de tipo PersonaViewHolder
+
+        - verificamos que si el converterView es nulo lo llenamos con la variable miInflator pasandole el layout list_view_persona,
+        el viewGroup y false
+        - Si no es nulo hacemos view = convertView
+                                vh = view.tag as PersonaViewHolder
+        - Seteamos los valores de nombre completo y edad al PersonaViewHolder
+        - Por ultimo devolvemos el view.
+
+10) Cargar los datos simulando que son extraidos de una Base de datos o API
+     * Para eso creamos un metodo privado que devuelva una lista de personas en la clase MainActivity.
+11) creamos las variables en la clase MainActivity     private lateinit var  personaAdaptador: PersonaAdaptador
+                                                       private lateinit var  listaPersona: List<Persona>
+12) Llenamos  la listaPersona llamando la función getPersonas
+13) Inicializamos el adaptador de Persoans pasandole el contexto, el layout y la lista.
+14) Caramos el adaptador al listView
+

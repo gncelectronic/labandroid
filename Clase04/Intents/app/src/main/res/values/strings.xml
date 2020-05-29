@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Intents</string>
+    <string name="btnCallActivity">Llamar otro Activity</string>
+    <string name="btnOpenChrome">Abrir Browser</string>
+</resources>

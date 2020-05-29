@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Picasso</string>
+    <string name="strBtnLoaderCircle">Cargar Imagen en Circulos</string>
+    <string name="strBtnLoaderImagen">Cargar Imagen</string>
+    <string name="strBtnLoaderAnimation">Cargar Imagen Animada</string>
+    <string name="strBtnResize">Cargar Imagen Resize</string>
+</resources>

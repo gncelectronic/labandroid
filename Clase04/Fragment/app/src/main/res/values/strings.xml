@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="blank_fragment">Fragmento Negro</string>
+    <string name="strBtnCargarFragment">Cargar Fragment</string>
+</resources>

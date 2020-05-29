@@ -1,0 +1,14 @@
+1)  Agregar en el archivo gradle la libreria picasso: https://square.github.io/picasso/
+implementation 'com.squareup.picasso:picasso:(insert latest version)'
+
+2) Sincronizar el archivo gradle para que baje la libreria
+3) Ir al archivo manifiesto y dar acceso a internet
+ <uses-permission android:name="android.permission.INTERNET"/>
+4) Probar la libreria picasso descargando una imagen
+* Picasso.get().load("https://www.pexels.com/photo/autumn-colors-3070989/").fetch()
+5) Cambiar nuestro layout donde usaremos LineLayout con dos imageView y un  buttom
+6) Crear un metodo privado para cargar las imagenes con Picasso
+ * Cargar con fit
+ * Cargar co resize
+ * Cargar con transformación en circulo
+ * Cargar con animación
