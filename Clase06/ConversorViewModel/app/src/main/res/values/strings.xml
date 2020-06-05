@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ConversorViewModel</string>
+    <string name="strBtnConvertir">Convertir</string>
+</resources>
